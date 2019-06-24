@@ -25,6 +25,7 @@ En ViewModel indeholder det data der skal præsenteres i viewet. Der kan også v
 ### Eksempel
 
 > ViewModel der indeholder LiveData
+
 ```kotlin
 class ExampleViewModel(val app: Application) : AndroidViewModel(app) {
   val fragmentTitle = MutableLiveData<String>()
@@ -40,6 +41,7 @@ class ExampleViewModel(val app: Application) : AndroidViewModel(app) {
 ```
 
 > Activity der bruger ovenstående ViewModel og observer på LiveData
+
 ```kotlin
 class MyActivity : AppCompatActivity() {
     private lateinit var exampleViewModel: ExampleViewModel
